@@ -1,0 +1,271 @@
+/* === إعدادات عامة === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* اختر خطًا مناسبًا */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    direction: rtl; /* مهم للنص العربي */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* لمنع العناصر من الخروج عن الحاوية */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e8491d; /* لون مميز للروابط */
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e8491d; /* خط تحت العناوين الرئيسية */
+    display: inline-block; /* لجعل الخط تحت النص فقط */
+    padding-bottom: 5px;
+}
+
+/* لجعل الخط تحت العنوان الرئيسي في المنتصف */
+section h2 {
+    display: block; /* إعادة الضبط للوضع الافتراضي */
+    text-align: center;
+}
+
+section h2::after { /* إضافة خط مزخرف (اختياري) */
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e8491d;
+    margin: 10px auto 0;
+}
+
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+img {
+    max-width: 100%; /* لجعل الصور متجاوبة */
+    height: auto;
+    display: block; /* لمنع مسافات إضافية تحت الصور */
+}
+
+/* === رأس الصفحة (Header) === */
+header {
+    background-color: #333;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* يوزع العناصر (الشعار والقائمة) */
+    align-items: center; /* يوسّط العناصر عمودياً */
+}
+
+header #logo {
+    margin: 0;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+header nav ul {
+    display: flex; /* يجعل عناصر القائمة أفقية */
+}
+
+header nav ul li {
+    margin-right: 20px; /* مسافة بين عناصر القائمة */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* إزالة المسافة من آخر عنصر */
+}
+
+header nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease; /* تأثير انتقال سلس للون */
+}
+
+header nav a:hover {
+    color: #e8491d; /* تغيير اللون عند مرور الفأرة */
+}
+
+/* === قسم الترحيب (Hero) === */
+#hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover; /* ضع صورة خلفية مناسبة هنا */
+    /* إذا لم تكن لديك صورة، يمكنك استخدام لون خلفية */
+    /* background-color: #50a3a2; */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 300px; /* ارتفاع أدنى للقسم */
+    display: flex; /* لتوسيط المحتوى عمودياً */
+    align-items: center; /* لتوسيط المحتوى عمودياً */
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: none; /* إزالة الخط السفلي هنا */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* ظل للنص لجعله أوضح فوق الصورة */
+}
+#hero h2::after { /* إزالة الخط المزخرف هنا */
+    display: none;
+}
+
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    display: inline-block;
+    background-color: #e8491d;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d13f11; /* لون أغمق عند المرور */
+}
+
+/* === قسم القائمة (Menu) === */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* شبكة متجاوبة */
+    gap: 30px; /* المسافة بين عناصر القائمة */
+    margin-top: 30px;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثيرات انتقال */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* رفع العنصر قليلاً عند المرور */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+    width: 100%; /* يجعل الصورة تملأ عرض العنصر */
+    height: 200px; /* ارتفاع ثابت للصور */
+    object-fit: cover; /* يجعل الصورة تغطي المساحة مع الحفاظ على النسبة */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    color: #e8491d; /* لون مميز لاسم الطبق */
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* === قسم اتصل بنا (Contact) === */
+#contact ul {
+    margin-top: 20px;
+}
+
+#contact li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#contact li strong {
+    display: inline-block;
+    min-width: 100px; /* لترتيب العناصر قليلاً */
+    color: #333;
+}
+
+/* === التذييل (Footer) === */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* === تجاوبية (Responsive) بسيطة === */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* رص الشعار والقائمة فوق بعض */
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+        justify-content: center; /* توسيط القائمة */
+    }
+     header nav ul li {
+        margin: 0 10px; /* تقليل المسافة بين عناصر القائمة */
+    }
+
+    #hero h2 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .container {
+        width: 90%; /* زيادة عرض الحاوية في الشاشات الصغيرة */
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr; /* عمود واحد في الشاشات الصغيرة جداً */
+    }
+}

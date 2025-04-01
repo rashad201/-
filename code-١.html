@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- تحديث الوصف والعنوان ليكون أكثر جاذبية كقالب -->
+    <meta name="description" content="قالب موقع ويب لمطعم عصري وأنيق. قابل للتخصيص بسهولة لعرض قائمة الطعام والخدمات.">
+    <title>مطعم المذاق الأصيل - قالب موقع ويب</title>
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- يمكنك إضافة رابط لأيقونات FontAwesome إذا أردت استخدامها -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+</head>
+<body>
+
+    <!-- ==================== رأس الصفحة ==================== -->
+    <header>
+        <div class="container">
+            <!-- يمكن استبدال النص بصورة شعار -->
+            <h1 id="logo">المذاق الأصيل</h1>
+            <!-- <a href="index.html" id="logo"><img src="images/logo.png" alt="شعار مطعم المذاق الأصيل"></a> -->
+            <nav>
+                <ul>
+                    <!-- أضف كلاس 'active' للصفحة الحالية (يمكن التحكم به بالجافاسكربت لاحقًا) -->
+                    <li><a href="#hero" class="active">الرئيسية</a></li>
+                    <li><a href="#about">عن المطعم</a></li>
+                    <li><a href="#menu">القائمة</a></li>
+                    <li><a href="#testimonials">آراء العملاء</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== قسم الترحيب (Hero) ==================== -->
+    <section id="hero">
+        <div class="container">
+            <!-- استخدم عنوانًا جذابًا -->
+            <h2>اكتشف نكهات لا تُقاوم</h2>
+            <p>تجربة طعام فريدة تنتظرك في أجواء دافئة وخدمة استثنائية.</p>
+            <a href="#menu" class="button">تصفح قائمة الطعام</a>
+        </div>
+    </section>
+
+    <!-- ==================== قسم عن المطعم ==================== -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>قصتنا وشغفنا</h2>
+                <p>تعرف على رحلتنا في عالم الطهي وكيف نسعى لتقديم الأفضل لضيوفنا.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>مرحبًا بكم في المذاق الأصيل</h3>
+                    <p>تأسس مطعمنا بدافع الشغف لتقديم تجربة طعام أصيلة تجمع بين أفضل المكونات الطازجة والوصفات التقليدية المبتكرة. نحن نؤمن بأن الطعام يجمع الناس، ونسعى جاهدين لخلق ذكريات لا تُنسى حول مائدتنا.</p>
+                    <p>فريقنا المكون من طهاة محترفين وموظفين ودودين يعمل بتفانٍ لضمان حصولك على خدمة ممتازة وأطباق شهية في كل زيارة. ندعوكم لتكونوا جزءًا من عائلتنا وتستمتعوا بأجوائنا المريحة.</p>
+                    <!-- يمكنك إضافة نقاط قوة أخرى -->
+                    <ul>
+                        <li>✓ مكونات طازجة ومحلية</li>
+                        <li>✓ وصفات مبتكرة وأصيلة</li>
+                        <li>✓ أجواء عائلية ومريحة</li>
+                        <li>✓ خدمة ودودة واحترافية</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <!-- استخدم صورة جذابة للمطعم أو لفريق العمل -->
+                    <img src="https://via.placeholder.com/600x400/cccccc/ffffff?text=Restaurant+Interior" alt="صورة داخلية للمطعم">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== قسم قائمة الطعام ==================== -->
+    <section id="menu" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>قائمتنا الشهية</h2>
+                <p>استكشف مجموعة متنوعة من الأطباق المحضرة بعناية لتناسب جميع الأذواق.</p>
+            </div>
+            <div class="menu-items">
+                <!-- عنصر قائمة 1 -->
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <!-- استخدم صور أطباق حقيقية أو صور placeholder عالية الجودة -->
+                        <img src="https://via.placeholder.com/400x250/e8491d/ffffff?text=Dish+1+Image" alt="اسم الطبق الأول">
+                    </div>
+                    <div class="menu-content">
+                        <h3>طبق رئيسي مميز</h3>
+                        <p>وصف مختصر وجذاب للطبق الأول، يبرز مكوناته الرئيسية ونكهته الفريدة.</p>
+                        <span class="price">XX د.إ</span>
+                    </div>
+                </div>
+                <!-- عنصر قائمة 2 -->
+                <div class="menu-item">
+                     <div class="menu-image">
+                        <img src="https://via.placeholder.com/400x250/333333/ffffff?text=Dish+2+Image" alt="اسم الطبق الثاني">
+                     </div>
+                    <div class="menu-content">
+                        <h3>سلطة منعشة</h3>
+                        <p>مزيج رائع من الخضروات الطازجة مع صلصة خاصة تضفي لمسة مميزة.</p>
+                        <span class="price">YY د.إ</span>
+                    </div>
+                </div>
+                <!-- عنصر قائمة 3 -->
+                <div class="menu-item">
+                     <div class="menu-image">
+                        <img src="https://via.placeholder.com/400x250/50a3a2/ffffff?text=Dish+3+Image" alt="اسم الطبق الثالث">
+                    </div>
+                    <div class="menu-content">
+                        <h3>حلوى شهية</h3>
+                        <p>اختتام مثالي لوجبتك مع حلوى محضرة بحب ومكونات عالية الجودة.</p>
+                        <span class="price">ZZ د.إ</span>
+                    </div>
+                </div>
+                 <!-- عنصر قائمة 4 (مثال إضافي) -->
+                <div class="menu-item">
+                     <div class="menu-image">
+                        <img src="https://via.placeholder.com/400x250/f0e68c/333333?text=Dish+4+Image" alt="اسم الطبق الرابع">
+                    </div>
+                    <div class="menu-content">
+                        <h3>مشروب خاص</h3>
+                        <p>مشروب منعش ومبتكر يتميز به مطعمنا، مثالي مع أي وجبة.</p>
+                        <span class="price">AA د.إ</span>
+                    </div>
+                </div>
+                <!-- أضف المزيد من الأطباق بنفس الطريقة -->
+            </div>
+             <div style="text-align: center; margin-top: 40px;">
+                 <a href="#" class="button">عرض القائمة الكاملة (PDF)</a> <!-- رابط لقائمة كاملة إن وجدت -->
+             </div>
+        </div>
+    </section>
+
+    <!-- ==================== قسم الشهادات (Testimonials) ==================== -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>ماذا يقول عنا ضيوفنا؟</h2>
+                <p>نفخر بالشهادات التي نتلقاها ونسعى دائمًا لتجاوز التوقعات.</p>
+            </div>
+            <div class="testimonial-items">
+                <!-- شهادة 1 -->
+                <div class="testimonial-item">
+                    <blockquote>"كانت تجربة رائعة! الطعام لذيذ جدًا والأجواء مريحة والخدمة ممتازة. أنصح به بشدة."</blockquote>
+                    <span class="author">- عميل سعيد</span>
+                </div>
+                <!-- شهادة 2 -->
+                <div class="testimonial-item">
+                    <blockquote>"أحد أفضل المطاعم التي زرتها. تنوع الأطباق رائع والجودة عالية. مكان مثالي للعائلة والأصدقاء."</blockquote>
+                    <span class="author">- زائر دائم</span>
+                </div>
+                <!-- شهادة 3 -->
+                <div class="testimonial-item">
+                    <blockquote>"كل طبق كان تحفة فنية! المكونات طازجة والنكهات متوازنة. شكرًا لفريق العمل على هذه التجربة المميزة."</blockquote>
+                    <span class="author">- خبير طعام</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== قسم اتصل بنا ==================== -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+             <div class="section-title">
+                <h2>تواصل معنا</h2>
+                <p>نحن هنا للإجابة على استفساراتكم وتلقي حجوزاتكم. لا تترددوا في التواصل!</p>
+            </div>
+
+            <div class="row" style="display: flex; flex-wrap: wrap; gap: 40px;">
+
+                <!-- معلومات الاتصال -->
+                <div class="contact-info" style="flex: 1; min-width: 300px;">
+                    <h3>معلومات الاتصال</h3>
+                    <ul>
+                        <li><strong>العنوان:</strong> شارع المطاعم، مبنى 123، دبي، الإمارات العربية المتحدة (مثال)</li>
+                        <li><strong>الهاتف:</strong> <a href="tel:+971000000000">+971 XX XXX XXXX</a></li>
+                        <li><strong>البريد الإلكتروني:</strong> <a href="mailto:info@example-restaurant.com">info@example-restaurant.com</a></li>
+                        <li><strong>ساعات العمل:</strong> يومياً من 12:00 ظهراً حتى 11:00 مساءً</li>
+                    </ul>
+                    <!-- يمكنك إضافة روابط لشبكات التواصل الاجتماعي هنا أيضًا -->
+                     <div class="social-links" style="margin-top: 20px; font-size: 1.2em;">
+                         <a href="#" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i> فيسبوك</a> |
+                         <a href="#" target="_blank" title="انستغرام"><i class="fab fa-instagram"></i> انستغرام</a> |
+                         <a href="#" target="_blank" title="تويتر"><i class="fab fa-twitter"></i> تويتر</a>
+                         <!-- استخدم أيقونات فعلية إذا أضفت FontAwesome -->
+                    </div>
+                </div>
+
+                <!-- نموذج الاتصال -->
+                <div class="contact-form" style="flex: 1.5; min-width: 300px;">
+                    <h3>أرسل لنا رسالة</h3>
+                    <!-- ملاحظة: النموذج يحتاج إلى برمجة خلفية ليعمل -->
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">الاسم:</label>
+                            <input type="text" id="name" name="name" required placeholder="الاسم الكامل">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني:</label>
+                            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                        </div>
+                         <div class="form-group">
+                            <label for="subject">الموضوع:</label>
+                            <input type="text" id="subject" name="subject" placeholder="استفسار / حجز / اقتراح">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة:</label>
+                            <textarea id="message" name="message" required placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        <button type="submit" class="button">إرسال الرسالة</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- حاوية الخريطة -->
+            <div class="map-container">
+                 <!-- تعليمات لإضافة الخريطة -->
+                 <p>
+                    لاستبدال هذا العنصر بخريطة Google Maps:<br>
+                    1. اذهب إلى Google Maps وابحث عن عنوان مطعمك.<br>
+                    2. انقر على "مشاركة" ثم "تضمين خريطة".<br>
+                    3. انسخ كود HTML (يبدأ بـ &lt;iframe src=...) والصقه هنا بدلاً من هذه الفقرة.
+                 </p>
+                 <!-- مثال لكود iframe (يجب استبداله بالكود الفعلي) -->
+                 <!--
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d......" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== التذييل (Footer) ==================== -->
+    <footer>
+        <div class="container">
+             <!-- يمكنك إضافة روابط مفيدة في التذييل -->
+             <nav class="footer-nav" style="margin-bottom: 20px;">
+                 <a href="#hero">الرئيسية</a> |
+                 <a href="#about">عن المطعم</a> |
+                 <a href="#menu">القائمة</a> |
+                 <a href="#contact">اتصل بنا</a> |
+                 <a href="#">سياسة الخصوصية</a> <!-- مثال لرابط إضافي -->
+             </nav>
+             <div class="social-links" style="margin-bottom: 20px;">
+                 <!-- إضافة روابط الشبكات الاجتماعية -->
+                 <a href="#" target="_blank" title="فيسبوك">فيسبوك</a> |
+                 <a href="#" target="_blank" title="انستغرام">انستغرام</a> |
+                 <a href="#" target="_blank" title="تويتر">تويتر</a> |
+                 <a href="#" target="_blank" title="سناب شات">سناب شات</a>
+                 <!-- استخدم أيقونات إذا أضفت مكتبة مثل FontAwesome -->
+             </div>
+            <p>جميع الحقوق محفوظة &copy; <span id="year"></span> - مطعم المذاق الأصيل (قالب)</p>
+            <p style="font-size: 0.8em; opacity: 0.7;">تصميم وتطوير: [يمكنك وضع اسمك/شركتك هنا عند البيع]</p>
+        </div>
+    </footer>
+
+    <!-- جافاسكربت بسيط للحصول على السنة الحالية -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- يمكنك إضافة المزيد من الجافاسكربت هنا للتفاعلات (مثل القائمة النشطة، التمرير السلس، إلخ) -->
+
+</body>
+</html>
